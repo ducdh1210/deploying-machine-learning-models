@@ -8,7 +8,9 @@ _logger = logging.getLogger(__name__)
 
 
 def test_simple():
-    _logger.info("Helloooooooooooooooooooooooooooooo")
+    import os
+
+    print(os.getcwd())
     assert 2 == 2
 
 
