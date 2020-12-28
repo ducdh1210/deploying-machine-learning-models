@@ -2,13 +2,16 @@ import math
 
 from regression_model.predict import make_prediction
 from regression_model.processing.data_management import load_dataset
+import logging
+
+_logger = logging.getLogger(__name__)
 
 
 def test_make_single_prediction():
     # Given
     import os
 
-    print(os.getcwd())
+    _logger.info(os.getcwd())
     test_data = load_dataset(file_name="test.csv")
     single_test_json = test_data[0:1]
 
