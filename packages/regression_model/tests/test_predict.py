@@ -8,7 +8,7 @@ _logger = logging.getLogger(__name__)
 
 
 def test_simple():
-    print("Helloooooooooooooooooooooooooooooo")
+    _logger.info("Helloooooooooooooooooooooooooooooo")
     assert 2 == 2
 
 
